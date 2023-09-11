@@ -1,0 +1,354 @@
+*{box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html body{width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    align-items: center;
+}
+header{background-color: #EAC926;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+   
+}
+
+.main-top{display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-bottom{display: flex;
+    margin: 0;
+
+}
+
+.visita, .ofertas{width: 90%;
+    margin: auto;
+}
+
+
+.banner{width: 100%;
+    
+}
+
+img{width: 100%;    
+}
+
+
+.logo{width: 50%;
+
+}
+.busqueda{width: 50%;
+    margin-left: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: white solid
+    
+}
+
+.custom-icon4{font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.lupa{height: 30px;
+background-color: white;
+border-radius: 3px;
+border: white solid;
+
+}
+
+.sub{width: 100%;
+    text-align: center;
+font-weight: bold;
+}
+
+.burger-menu{display: flex;
+    justify-content: center;
+}
+.custom-icon2{color: white;
+    font-size: 20px;
+background-color: #1259c3;
+border-radius: 5px;
+padding: 10px;}
+
+
+ul{list-style: none;
+   
+    color: #222222;
+}
+
+h2{font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 15px;
+}
+.burger-menu{width: 100%;
+text-align: center;}
+
+
+
+.precio{font-size: 18px;
+    font-weight: bold;
+}
+
+.descuentos{font-size: 16px;
+}
+
+.descripciones{font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4{padding: 10px;
+margin: 10px;}
+
+i{color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+a{text-decoration: none;
+    color: black;
+}
+
+.custom-icon{font-size: 12px;
+    color: black;
+    padding: 5px;
+}
+
+
+h4{margin-bottom: 0%;
+}
+
+article{display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.articulo{border: 1px solid #ebedeb;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+.custom-icon3{display: block;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}    
+
+.numeros{display: flex;
+flex-direction: row;
+align-items: center;
+}
+.precios{width: 30%;
+}
+.descuentos{width: 70%;
+    text-align: center;
+    color: #39b54a;
+}
+.registro{display: flex;
+    width: 100%;
+flex-direction: column
+;}
+img{width: 100%;
+}
+
+
+@media(max-width: 360px){ .descripciones{
+    display: none;
+    }
+    nav{display: none;
+    }   
+}
+
+@media(min-width: 361px) and (max-width: 768px){
+    .visita{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger-menu{display: none;}  
+    
+    article{box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    flex-grow: 1;
+    width: calc(50% - 10px);
+    margin: 15px 5px;
+    justify-content: space-between;
+    }
+    .sub{width: 33%;
+        text-align: right;
+    font-weight: bold;
+    }
+    .logo{width: 33%;}
+    .busqueda{width: 33%;
+    height: 20px;
+    margin: 0;
+}
+
+
+.custom-icon4{font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.lupa{height: 20px;
+margin: 0;
+padding: 0;}
+
+    .visita{width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+flex-direction: row;
+
+}
+
+.ofertas{width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+flex-direction: row;
+
+}
+.top{display: inline-block;
+flex-direction: row;
+width: 100%;
+margin-top: 20px;
+    margin-left: 15px;
+}
+
+nav{ display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;     
+}
+.left-nav{display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;}
+
+.right-nav{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;
+}
+
+li{display: flex;
+    padding-left: 2px;
+}
+footer{display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+}
+
+    
+@media(min-width: 769px) {
+    article{box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex-grow: 1;
+        width: 25%;
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    justify-content: space-between;
+    }
+    .burger-menu{display: none;
+    }
+    .visita{width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    flex-direction: row;
+    }
+    .ofertas{width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    flex-direction: row;
+    
+    }    
+.top{display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+align-items: center;
+}
+nav{display: flex; 
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;     
+}
+
+.left-nav{display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;}
+
+.right-nav{display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{display: flex;
+    padding-left: 15px;
+    
+}
+footer{display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+}
+
+
+
+
+
