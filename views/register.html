@@ -57,62 +57,64 @@
 
         <p class="titulo">Registro de usuario</p>
         <div class="datos"> 
-        <form action="/views/register.html" method="post">
-            <label for="nombre">Nombre y Apellido:</label>
-            <br>
-            <input class="input-style" type="text" id="nombre">
-            <br>
-            <label for="usuario">Usuario:</label>
-            <br>
-            <input class="input-style" type="text" id="usuario" required>
-            <br>
-            <label for="fecha">Fecha de nacimiento:</label>
-            <br>
-            <input class="input-style" type="date" id="fecha">
-            <br>
-            <label for="domicilio">Domicilio:</label>
-            <br>
-            <input class="input-style" type="text" id="domicilio">
-        </div>
-        <div class="perfil"> 
-            <p class="titulo">Perfil del usuario:</p>
-            <div class="radio-option">
-                <input type="radio" name="profile" id="comprador">
-                <label for="comprador">Comprador</label>
+            <form action="/views/register.html" method="post">
+                <label for="nombre">Nombre y Apellido:</label>
+                <br>
+                <input class="input-style" type="text" name="nombre" required>
+                <br>
+                <label for="usuario">Usuario:</label>
+                <br>
+                <input class="input-style" type="text" name="usuario" required>
+                
+                <br>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <br>
+                <input class="input-style" type="date" name="fecha" min="1900-01-01">
+                <br>
+                <label for="domicilio">Domicilio:</label>
+                <br>
+                <input class="input-style" type="text" name="domicilio" required>
             </div>
-        </div>
-            <div class="radio-option">
-                <input type="radio" name="profile" id="vendedor">
-                <label for="vendedor">Vendedor</label>
-              </div>
-       
-
-            <div class="categoria">
-            <p class="titulo">Intereses:</p>
-            <label for="electro"><input type="checkbox" name="electro" id="electro" > Electro</label>
-            <label for="moda"><input type="checkbox" name="moda" id="moda"> Moda</label>
-            <label for="hogar"><input type="checkbox" name="hogar" id="hogar"> Hogar</label>
-            <label for="jugueteria"><input type="checkbox" name="jugueteria" id="jugueteria"> Jugueteria</label>
-            <label for="vida-Sana"><input type="checkbox" name="vida-Sana" id="vida-Sana"> Vida Sana</label>
+            <div class="perfil"> 
+                <p class="titulo">Perfil del usuario:</p>
+                <div class="radio-option">
+                    <input type="radio" name="profile" id="comprador">
+                    <label for="comprador">Comprador</label>
+                </div>
             </div>
+                <div class="radio-option">
+                    <input type="radio" name="profile" id="vendedor">
+                    <label for="vendedor">Vendedor</label>
+                  </div>
+           
+    
+                <div class="categoria">
+                <p class="titulo">Intereses:</p>
+                <label for="electro"><input type="checkbox" name="electro" id="electro" > Electro</label>
+                <label for="moda"><input type="checkbox" name="moda" id="moda"> Moda</label>
+                <label for="hogar"><input type="checkbox" name="hogar" id="hogar"> Hogar</label>
+                <label for="jugueteria"><input type="checkbox" name="jugueteria" id="jugueteria"> Jugueteria</label>
+                <label for="vida-Sana"><input type="checkbox" name="vida-Sana" id="vida-Sana"> Vida Sana</label>
+                </div>
+                
+                <label class="foto_perfil"for="foto">Foto de usuario:</label>
+                <input class="foto" type="file" id="foto" accept="jpg" multiple></input>
+                <br>
+                <label for="password">Contraseña:</label>
+                <input class="password" type="password" id="password"></input>
+                <br>
+                <label for="password2">Confirmar contraseña:</label>
+                <input class="password2" type="password" id="password2"></input>
+                 
+                 <br>
+                <br>
+            <button id="registrarse"action="/views/home.html" method="post"></button>
+                <input class="registrarse" value="Registrarse" type="submit" id="registrarse">
             
-            <label class="foto_perfil"for="foto">Foto de usuario:</label>
-            <input class="foto" type="file" id="foto" accept="jpg"></input>
-            <br>
-            <label for="password">Contraseña:</label>
-            <input class="password" type="password" id="password"></input>
-            <br>
-            <label for="password2">Confirmar contraseña:</label>
-            <input class="password2" type="password" id="password2"></input>
-             </form>
-             <br>
-            <br>
-            <form id="registrarse"action="/views/home.html" method="post"></form>
-            <input class="registrarse" value="Registrarse" type="button" id="registrarse">
-            <br>
-            
-            <input class="reset" value="Borrar" type="button" id="borrar">
-                   
+                <br>
+                
+                <input class="reset" value="Borrar" type="reset" id="borrar">
+            </form>         
         </div>
     </main>
     <footer>

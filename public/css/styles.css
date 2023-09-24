@@ -41,8 +41,6 @@ html body{max-width: 100%;
     width: 100%;
     padding: 20px;
     }
-        
-
         .main-top{display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
@@ -52,11 +50,11 @@ html body{max-width: 100%;
 
             .search{display: inline-block;
             }
-            .busqueda{width: 50%;
-            margin-left: 5px;
+            .busqueda{width: 70%;
+            margin-left: 20px;
             height: 30px;
             border-radius: 3px;
-            border: white solid;  
+            border: #ebebeb solid;  
             }
 
             .custom-icon4{font-size: 12px;
@@ -65,7 +63,7 @@ html body{max-width: 100%;
             }
             .lupa{height: 30px;
             border-color: #ebebeb;
-            border: white solid;
+            border: #ebebeb solid;
             }
         .sub{width: 100%;
         text-align: center;
@@ -283,6 +281,7 @@ font-weight: bold;
     .main-top{margin: auto;
         justify-content: space-between;
         flex-direction: row;  
+        align-items: center;
     }
     .main-bottom{margin-top: 20px;}
     
@@ -399,15 +398,24 @@ text-align: left;}
 /*computadora*/ 
 @media(min-width: 769px) {
     header{font-size: 14px;}
-    .busqueda{width: 80%;}
+    
     article{box-shadow: 0px 0px 10px rgb(100, 100, 100);
         flex-grow: 1;
         width: 25%;
-    width: calc(25% - 10px);
-    margin-right: 10px;
+    width: calc(25% - 30px);
+    margin-right: 30px;
     justify-content: space-between;
     
     }
+    article:hover{box-shadow: 3px 3px 14px rgb(100, 100, 100);
+        transition: box-shadow 0.3s ease;} 
+    .busqueda{width: 150px;
+    }
+    .search{margin-top: 15px;
+    margin-left: 20px;
+}
+    .sub{width: 40%;
+    text-align: center;}
     .burger-menu{display: none;
     }
     .visita{width: 90%;
@@ -424,8 +432,7 @@ text-align: left;}
     
     }   
     
-    article:hover{box-shadow: 3px 3px 14px rgb(100, 100, 100);
-        transition: box-shadow 0.3s ease;} 
+    
     
 .top{display: flex;
     flex-direction: row;
@@ -434,8 +441,9 @@ text-align: left;}
     margin-left: 20px;
 align-items: center;
 }
-.main-top{width: 50%;}
-.sub{width: 50%;}
+.main-top{width: 60%;
+justify-content: space-evenly;}
+
 nav{display: flex; 
     justify-content: space-between; 
     align-items: center;  
@@ -454,6 +462,7 @@ align-items: center;}
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-right: 20px;
 }
 
 li{display: flex;
